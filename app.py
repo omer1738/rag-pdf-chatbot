@@ -95,7 +95,8 @@ def main():
 
         api_key = st.text_input("Groq API Key", type="password")
         st.markdown("Get a free key at [console.groq.com/keys](https://console.groq.com/keys)")
-        model_name = st.text_input("Groq model", value="llama-3.3-70b-versatile")
+      
+        model_name = st.text_input("Groq model", value="openai/gpt-oss-20b")
 
         st.divider()
         pdf_docs = st.file_uploader(
